@@ -18,7 +18,7 @@ if ($age >= 18) {
     <title>Document</title>
 </head>
 <body>
-
+<h1> Věk <?= $age; ?> let </h1>
   <h3> <?= $answer; ?> </h3>
 
 </body>
