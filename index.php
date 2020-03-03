@@ -1,11 +1,14 @@
 <?php
 
-$age = 5;
+$age = 20;
 
 if ($age >= 18) {
    $answer = "Tak si dej chlapče.";
+   $img = "grafika/jo.png";
+   
 } else {
-    $answer = "Tak to teda ne. Alkoholické nápoje maldším 18-ti let neprodáváme."; 
+    $answer = "Tak to teda ne. Alkoholické nápoje maldším 18-ti let neprodáváme.";
+    $img = "grafika/ne.png";
 }
 
 ?>
@@ -20,6 +23,6 @@ if ($age >= 18) {
 <body>
 <h1> Věk <?= $age; ?> let </h1>
   <h3> <?= $answer; ?> </h3>
-
+  <img src="<?= $img; ?>" alt="obrázek">
 </body>
 </html>
